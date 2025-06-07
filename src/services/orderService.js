@@ -121,7 +121,7 @@ const handleMoMoCallback = async (callbackData) => {
 const accessKey = 'F8BBA842ECF85';
 const secretKey = 'K951B6PE1waDMi640xX08PD3vg6EkVlz';
 const partnerCode = 'MOMO';
-const redirectUrl = 'http://localhost:5173/orderList'; // URL nhận kết quả sau khi thanh toán
+const redirectUrl = 'https://woofhavenn.netlify.app'; // URL nhận kết quả sau khi thanh toán
 const ipnUrl = 'https://new-be-71aa.onrender.com/api/orders/mcallback';
 
 const config = {
@@ -212,7 +212,7 @@ const createOrder = async (data) => {
             }));
 
             const embed_data_obj = {
-                redirecturl: "http://localhost:5173/orderList",
+                redirecturl: "https://woofhavenn.netlify.app",
                 userId: data.userId,
                 cartItems: tempCartItems,
                 paymentMethod: data.paymentMethod,
